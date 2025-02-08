@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { View } from "react-native";
 import CustomButton from "../components/CustomButton/CustomButton";
 import { useNavigation } from "@react-navigation/native";
 import { NavigationProps } from "../navigator/Navigator";
@@ -33,7 +33,7 @@ const Home = () => {
           />
           <CustomButton
             title="<="
-            onPress={() => navigation.navigate("Screen4")}
+            onPress={() => navigation.navigate("Screen5")}
           />
         </View>
       </View>

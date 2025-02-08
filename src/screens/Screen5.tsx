@@ -13,7 +13,6 @@ const Screen5 = ({
   const [numero2, setNumero2] = useState("");
   const [resultado, setResultado] = useState("");
 
-  /** Función para calcular el número menor o igualdad */
   const calcularMenor = useCallback(() => {
     if (!numero1 || !numero2) {
       setResultado("Por favor ingresa valores en los campos");
@@ -35,7 +34,7 @@ const Screen5 = ({
     } else {
       setResultado(`${num1} es igual que ${num2}`);
     }
-  }, [numero1, numero2]); // Se recalcula solo si cambian los números
+  }, [numero1, numero2]);
 
   return (
     <View style={styles.container}>
